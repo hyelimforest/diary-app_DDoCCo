@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+$darkgray : #7B7b7b;
+$lightgray : #EAE7E1;
+$pink : #E8B4B8;
+$pinkT : rgb(232, 180, 184,0.5);
+$skyblue : #A5C5D6;
+$skyblueT: rgb(165, 197, 214,0.3);
+$black : #2F2F2F;
+$bgcolor : #FAF7F4;
+
+$size-xl : 6rem;
+$size-l : 5rem;
+$size-m : 4rem;
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Pretendard-Regular';
+  font-size: 4px;
+  color: $darkgray;
+}
+
+input {
+  margin: 0;
+}
+ul,li,ol {
+  list-style: none;
+}
+
+
+
+h1 {
+  font-size: $size-xl;
+}
+h2 {
+  font-size: $size-l;
+}
+p, article, button, div, span, input {
+  font-size: $size-m;
+}
