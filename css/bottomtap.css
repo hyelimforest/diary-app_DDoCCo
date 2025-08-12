@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* textBox 한 줄 높이 */
 * {
   margin: 0 auto;
   padding: 0;
@@ -11,7 +13,9 @@ input {
   margin: 0;
 }
 
-ul, li, ol {
+ul,
+li,
+ol {
   list-style: none;
 }
 
@@ -23,8 +27,21 @@ h2 {
   font-size: 5rem;
 }
 
-p, article, button, div, span, input {
+p,
+article,
+button,
+div,
+span,
+input {
   font-size: 4rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #A5C5D6 !important;
 }
 
 .bottom-nav {
