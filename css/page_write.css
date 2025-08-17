@@ -133,7 +133,6 @@ button:hover {
   margin-bottom: 50px;
 }
 #wrap #diary #textBox:empty::before {
-  content: attr(data-placeholder);
   color: #7B7b7b;
   pointer-events: none;
 }
@@ -142,10 +141,14 @@ button:hover {
 }
 #wrap #diary #textBox {
   min-height: 288px;
+  width: 100%;
   font-size: 16px;
   line-height: 36px;
   white-space: pre-wrap;
   word-break: break-word;
+  border: 0;
+  background-color: transparent;
+  resize: none;
   outline: 0px solid transparent;
   /* 노트지 줄 효과 */
   background-image: url(../img/redLine.svg);

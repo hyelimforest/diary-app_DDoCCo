@@ -7,6 +7,7 @@
   <title>또꼬또꼬</title>
   <link rel="stylesheet" href="./css/page_write.css">
   <script src="./js/date.js" defer></script>
+  <script src="./js/diary.js" defer></script>
 </head>
 
 <body>
@@ -17,13 +18,13 @@
     </div>
     <div id="wrap">
       <div id="diary">
-        <article id="textBox" contenteditable="true" spellcheck="false" data-placeholder="오늘 하루는 어땠나요?"></article>
+        <textarea id="textBox" placeholder="오늘 하루는 어땠나요?"></textarea>
         <div class="img">
-          <input type="image" src="" alt="IMG">
-          <input type="image" src="" alt="IMG">
-          <input type="image" src="" alt="IMG">
+          <input type="file" accept="image/*" src="" alt="IMG">
+          <input type="file" accept="image/*" src="" alt="IMG">
+          <input type="file" accept="image/*" src="" alt="IMG">
         </div>
-        <button class="btnSave">SAVE</button>
+        <button class="btnSave" type="button">SAVE</button>
       </div>
       <div id="ai">
         <p>또꼬의 한마디<span>(확성기)</span></p>
@@ -36,7 +37,7 @@
       <button>쓰기</button>
       <button>기록</button>
       <button>검색</button>
-      <button>설정</button>
+      <button>설정</button> 
     </nav>
 
   </div>

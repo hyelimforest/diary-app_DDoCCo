@@ -36,7 +36,7 @@
 
     // diary 입력부분 placeholder
     #textBox:empty::before {
-      content: attr(data-placeholder);
+      // content: attr(data-placeholder);
       color: $darkgray;
       pointer-events: none;
     }
@@ -47,10 +47,14 @@
 
     #textBox {
       min-height: calc($line-h * 8);
+      width: 100%;
       font-size: 16px;
       line-height: $line-h;
       white-space: pre-wrap;
       word-break: break-word;
+      border: 0;
+      background-color: transparent;
+      resize: none;
 
       outline: 0px solid transparent;
 
