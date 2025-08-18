@@ -135,80 +135,33 @@ button:hover {
   background-color: #A5C5D6 !important;
 }
 
-#topbox {
-  height: 100px;
-  padding: 0 16px 0 16px;
-  background-color: #EAE7E1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-#topbox h1,
-#topbox #emotion {
+#wrap #searchBox {
   width: 100%;
-  text-align: left;
-}
-
-#diary {
-  margin-bottom: 50px;
-}
-#diary #textBox:empty::before {
-  color: #7B7b7b;
-  pointer-events: none;
-}
-#diary #textBox:focus::before {
-  content: "";
-}
-#diary #textBox {
-  min-height: 288px;
-  width: 100%;
-  font-size: 16px;
-  line-height: 36px;
-  white-space: pre-wrap;
-  word-break: break-word;
-  border: 0;
-  background-color: transparent;
-  resize: none;
-  outline: 0px solid transparent;
-  /* 노트지 줄 효과 */
-  background-image: url(../img/redLine.svg);
-}
-#diary .img {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
-}
-#diary .img input {
-  width: 100px;
-  height: 100px;
-  background-color: rgba(232, 180, 184, 0.5);
-}
-#diary .btnSave {
-  width: 100%;
-  height: 26px;
-  background-color: #E8B4B8;
-  border: none;
-  border-radius: 50px;
-  margin-top: 30px;
-  font-size: 5rem;
-  vertical-align: top;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-#ai > p {
-  font-weight: bold;
-}
-#ai #aitext {
-  width: 330px;
-  height: 160px;
   background-color: rgba(165, 197, 214, 0.3);
-  border-radius: 20px;
-  padding: 20px;
-  margin-top: 16px;
+  height: 38px;
   display: flex;
-  align-items: center;
-  font-style: italic;
+  border-radius: 20px;
+}
+#wrap #searchBox label {
+  flex-grow: 1;
+  line-height: 38px;
+  text-align: center;
+}
+#wrap #searchBox #search {
+  flex-grow: 2;
+  background-color: transparent;
+  border: none;
+  caret-color: #2F2F2F;
+  outline: none;
+}
+#wrap #searchBox [type=search]::-webkit-search-cancel-button {
+  display: none;
+}
+#wrap #searchBox button {
+  border: none;
+  flex-grow: 1;
+  background-color: transparent;
+  width: 20px;
+  padding-right: 5px;
+  border-radius: 0 20px 20px 0;
 }

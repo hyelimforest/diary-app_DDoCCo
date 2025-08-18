@@ -1,11 +1,5 @@
 @import 'common', 'bottomtap';
 
-#app {
-  width: 360px;
-  background-color: $bgcolor;
-}
-
-
 #topbox {
   height: 100px;
   padding: 0 16px 0 16px;
@@ -24,11 +18,7 @@
 
 }
 
-#wrap {
-  width: 328px;
-  padding: 30px 0;
-  justify-content: center;
-  background-color: $bgcolor;
+
 
 
   #diary {
@@ -109,4 +99,3 @@
     }
   }
 
-}

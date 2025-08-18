@@ -1,0 +1,40 @@
+@import 'common', 'bottomtap';
+
+#wrap {
+
+  #searchBox {
+    width: 100%;
+    background-color: $skyblueT;
+    height: 38px;
+    display: flex;
+    border-radius: 20px;
+
+    label {
+      flex-grow: 1;
+      line-height: 38px;
+      text-align: center;
+    }
+
+    #search {
+      flex-grow: 2;
+      background-color: transparent;
+      border: none;
+      // border-radius: 0 20px 20px 0;
+      caret-color: $black;
+      outline: none;
+    }
+
+    [type="search"]::-webkit-search-cancel-button {
+      display: none;
+    }
+
+    button {
+      border: none;
+      flex-grow: 1;
+      background-color: transparent;
+      width: 20px;
+      padding-right: 5px;
+      border-radius: 0 20px 20px 0;
+    }
+  }
+}

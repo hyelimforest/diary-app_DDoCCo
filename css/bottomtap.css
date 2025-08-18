@@ -32,7 +32,9 @@ article,
 button,
 div,
 span,
-input {
+input,
+label,
+a {
   font-size: 4rem;
 }
 
@@ -44,16 +46,33 @@ button:hover {
   background-color: #A5C5D6 !important;
 }
 
+#app {
+  width: 360px;
+  background-color: #FAF7F4;
+}
+#app #wrap {
+  width: 328px;
+  padding: 30px 0;
+  justify-content: center;
+  background-color: #FAF7F4;
+}
+
 .bottom-nav {
   display: flex;
   justify-content: space-around;
   width: 100%;
   height: 56px;
 }
-.bottom-nav button {
+.bottom-nav a {
   width: 25%;
   border: none;
   font-weight: bold;
   background-color: #EAE7E1;
   color: #2F2F2F;
+  text-decoration: none;
+  text-align: center;
+  line-height: 56px;
+}
+.bottom-nav a:hover {
+  background-color: #A5C5D6 !important;
 }
